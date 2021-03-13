@@ -9,10 +9,12 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: bold;
   margin-bottom: 0;
 }
+
+/* Stats Section Styling */
 
 #quote {
   font-size: 30px;
@@ -37,7 +39,7 @@ h1 {
   width: 100%;
 
   /* Background */
-  background: url('/FreeCodeCamp-Projects/Tribute Page/LeftEye1.jpg') center center / cover no-repeat;
+  background: url('https://wallpapercave.com/wp/wp2016240.jpg') center center / cover no-repeat;
 }
 
 #tribute-info {
@@ -48,6 +50,8 @@ h1 {
   margin-right: auto;
   display: block;
 }
+
+/* Stats Section Styling */
 
 .stats {
   /* background: #EFC268; */
@@ -68,12 +72,254 @@ h1 {
 
 .stats h2 {
   margin: 0;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 500;
 }
 
 .stats p {
   font-size: 1rem;
   font-weight: 700;
+}
+
+
+/* Discography Section Styling */
+.discography {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 50px;
+  margin-top: 100px;
   
+}
+
+#disco-info {
+  flex: 1;
+  align-self: center;
+  row-gap: 40px;
+}
+
+
+#disco-info h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+#disco-info h2::before {
+  content: "—— ";
+  letter-spacing: 0;
+}
+
+#disco-info p {
+  margin-left: 150px;
+  line-height: 2em;
+letter-spacing: 2px;
+}
+
+button {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 225px;
+  height: 42px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #EFC268;
+font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fcdfa6;
+}
+
+
+/*Albums Styling*/
+#catalogue {
+  flex: 2;
+  margin-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.albums {
+  flex-basis: 25%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.albums img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: #EFC268 2px solid;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  
+}
+
+/* Blockquote Styling
+.blockquote-wrapper::before {
+  content: "&";
+  font-size: 35vh;
+  color: rgba(255, 226, 185, 0.719);
+  position: absolute;
+  top: 258vh;
+  padding-bottom: 30px;
+  margin-left: 12px;
+font-style: italic;
+}
+
+
+.blockquote-wrapper {
+  height: 30vh;
+  overflow: hidden;
+  background-color: #EFC268;
+  display: flex;
+  align-items: center;
+}
+
+blockquote {
+  color: rgba(146, 104, 46, 0.83);
+  font-family: Tahoma, sans-serif;
+  font-size: 40px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+blockquote h1 {
+  font-size: 4rem;
+}
+
+blockquote p {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+blockquote p::before,
+blockquote p::after {
+  content: "“";
+  font-family: Georgia;
+  font-size: 8rem;
+  margin: -2rem 0 0 -4rem;
+  position: absolute;
+  opacity: 0.5;
+}
+
+blockquote p::after {
+  content: "”";
+  margin: -1rem -4rem 0 0;
+}
+
+blockquote cite {
+  font-size: 1.5rem;
+  font-style: normal;
+
+}
+*/
+
+.blockquote-wrapper {
+  background-color: #EFC268;
+  padding: 0 100px;
+}
+
+blockquote {
+  border-left: 3px solid #707070;
+  color: #1a1a1a;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.25em;
+  font-style: italic;
+  line-height: 1.8em;
+  margin: 1.1em -4em;
+  padding: 1em 2em;
+  position: relative;
+  transition: 0.2s border ease-in-out;
+  z-index: 0;
+}
+
+blockquote:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  height: 2em;
+  background-color: #fff;
+  width: 5px;
+  margin-top: -1em;
+}
+
+blockquote:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.5em;
+  color: #707070;
+  font-family: "Ionicons";
+  font-style: normal;
+  line-height: 1em;
+  text-align: center;
+  text-indent: -2px;
+  width: 1em;
+  margin-top: -0.5em;
+  transition: 0.2s all ease-in-out, 0.4s transform ease-in-out;
+}
+
+blockquote.format:before,
+blockquote.format:after {
+  display: none;
+}
+
+blockquote.book:after {
+  content: "";
+}
+
+blockquote.podcast:after {
+  content: "";
+}
+
+blockquote.lyrics:after {
+  content: "";
+}
+
+blockquote.favorite:after {
+  content: "";
+}
+
+blockquote:active:after {
+  transform: rotateY(360deg);
+}
+
+blockquote cite {
+  display: block;
+  font-size: 0.75em;
+  line-height: 1.8em;
+  margin-top: 1em;
+}
+
+
+/* Footer Section Styling */
+footer {
+  background: #707070;
+  padding: 0 35px;
+  color: #EFC268;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+
+}
+
+a {
+  color: #EFC268;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
 }
