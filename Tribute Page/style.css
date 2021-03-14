@@ -1,24 +1,28 @@
-html {
+html, body {
   font-family: sans-serif;
   font-size: 16px;
-}
-
-body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+main {
+  margin-bottom: -22px;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 10rem;
   font-weight: bold;
   margin-bottom: 0;
+  font-family: 'Bauhaus 93';
 }
 
-
 /*Banner Section Styling */
-
 #quote {
-  font-size: 30px;
+  font-size: 5rem;
+  font-family: Gabriola;
+  padding: 0;
+  margin: 0;
 }
 
 #image {
@@ -32,37 +36,52 @@ h1 {
 #banner {
   align-items: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-flow: column wrap;
+  justify-content: flex-end;
   color: white;
   /* Take full size */
   height: 100vh;
-  width: 100%;
-
-  /* Background */
+  max-width: 100%;
+  /* Gradient */
+  background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.73)),
+    url('https://wallpapercave.com/wp/wp2016240.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+  /* Background
   background: url('https://wallpapercave.com/wp/wp2016240.jpg') center center / cover no-repeat;
+*/
+  padding-bottom: 50px;
 }
 
 #tribute-info {
-  width: 50%;
+  width: 85%;
   text-align: justify;
-  padding: 40px 0 20px 0;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  font-size: calc(1rem + 0.5vw);
+  font-size: calc(1.2rem);
+  align-content: center;
+}
+
+.career-quote {
+  font-size: 1.5rem;
+  max-width: 80%;
+  margin: 50px auto;
 }
 
 .bio-section {
-  padding-top: 50px;
-
-}  
-
+  padding: 130px 0 50px 0;
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 50px;
+  row-gap: 135px;
+}
 
 .bio {
-    max-width: 900px;
-    margin: 100px auto;
-    position: relative;
+    max-width: 30%;
+    margin: 0 auto;
   }
 
 .bio h2::first-letter {
@@ -82,10 +101,12 @@ h1 {
 .stats {
   /* background: #EFC268; */
   display: grid;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(auto-fit, 350px);
   text-align: center;
-  column-gap: 60px;
+  column-gap: 20px;
+  row-gap: 20px;
   justify-content: center;
+  margin: 70px 0 135px 0;
 }
 
 .stats div {
@@ -94,6 +115,7 @@ h1 {
   align-items: center;
   background: #EFC268;
   padding: 100px 0;
+  justify-content: center;
 }
 
 .stats h2 {
@@ -103,9 +125,27 @@ h1 {
 }
 
 .stats p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
+
+#stat-quote {
+  background:#fff;
+  border: 2px solid #EFC268;
+  padding: 25px 20px;
+}
+
+#stat-quote p{
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+
+body > main:nth-child(1) > hr:nth-child(5) {
+  width: 85%;
+ }
+ 
+ 
 
 
 /* Discography Section Styling */
@@ -262,69 +302,9 @@ text-align: center;
 line-height: 1.15;
 }
 
-/* Blockquote Styling
-.blockquote-wrapper::before {
-  content: "&";
-  font-size: 35vh;
-  color: rgba(255, 226, 185, 0.719);
-  position: absolute;
-  top: 258vh;
-  padding-bottom: 30px;
-  margin-left: 12px;
-font-style: italic;
-}
-
-
-.blockquote-wrapper {
-  height: 30vh;
-  overflow: hidden;
-  background-color: #EFC268;
-  display: flex;
-  align-items: center;
-}
-
-blockquote {
-  color: rgba(146, 104, 46, 0.83);
-  font-family: Tahoma, sans-serif;
-  font-size: 40px;
-  width: 60%;
-  margin: 0 auto;
-}
-
-blockquote h1 {
-  font-size: 4rem;
-}
-
-blockquote p {
-  font-style: italic;
-  margin-bottom: 0;
-}
-
-blockquote p::before,
-blockquote p::after {
-  content: "“";
-  font-family: Georgia;
-  font-size: 8rem;
-  margin: -2rem 0 0 -4rem;
-  position: absolute;
-  opacity: 0.5;
-}
-
-blockquote p::after {
-  content: "”";
-  margin: -1rem -4rem 0 0;
-}
-
-blockquote cite {
-  font-size: 1.5rem;
-  font-style: normal;
-
-}
-*/
-
 .blockquote-wrapper {
   background-color: #EFC268;
-  padding: 0 100px;
+  padding: 10px 230px;
 }
 
 blockquote {
@@ -352,8 +332,12 @@ blockquote:before {
   margin-top: -1em;
 }
 
+.blockquote-wrapper blockquote:before {
+  background-color: #EFC268;
+}
+
 blockquote:after {
-  content: "";
+  content: "🎶";
   position: absolute;
   top: 50%;
   left: -0.5em;
@@ -373,29 +357,13 @@ blockquote.format:after {
   display: none;
 }
 
-blockquote.book:after {
-  content: "";
-}
-
-blockquote.podcast:after {
-  content: "";
-}
-
-blockquote.lyrics:after {
-  content: "";
-}
-
-blockquote.favorite:after {
-  content: "";
-}
-
-blockquote:active:after {
+blockquote:hover:after {
   transform: rotateY(360deg);
 }
 
 blockquote cite {
   display: block;
-  font-size: 0.75em;
+  font-size: .80em;
   line-height: 1.8em;
   margin-top: 1em;
 }
