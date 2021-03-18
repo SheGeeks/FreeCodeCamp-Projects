@@ -7,5 +7,5 @@
  ## Currently Working On
  - *TBD*
  
- ## Up Next:
+ ## Up Next
 - Survey Form
