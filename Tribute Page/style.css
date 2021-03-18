@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   font-family: sans-serif;
   font-size: 16px;
   margin: 0;
@@ -6,7 +7,7 @@ html, body {
   overflow-x: hidden;
 }
 
-main {
+#main {
   margin-bottom: -22px;
 }
 
@@ -24,6 +25,65 @@ h1 {
   padding: 0;
   margin: 0;
 }
+
+#banner {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  color: white;
+  /* Take full size */
+  height: 100vh;
+  max-width: 100%;
+  /* Gradient */
+  background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.73)),
+    url('https://wallpapercave.com/wp/wp2016240.jpg');
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+/* Bios Section */
+#tribute-info {
+  width: 85%;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: calc(1.2rem);
+  align-content: center;
+}
+
+.bio-section {
+  padding: 130px 0 50px 0;
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 50px;
+  row-gap: 135px;
+}
+
+.bio {
+  max-width: 30%;
+  margin: 0 auto;
+}
+
+.bio h2::first-letter {
+  z-index: 1;
+  float: left;
+  color: rgba(255, 180, 2, 0.33);
+  margin-right: -1000px;
+  margin-left: -80px;
+  margin-top: -120px;
+  font-size: calc(15rem + 2vw);
+  font-weight: 700;
+  text-shadow: 15px 15px rgba(239, 0, 0, 0.16);
+}
+
+/* Media Quote Styling */
 
 #img-div {
   text-align: center;
@@ -61,73 +121,14 @@ h1 {
   margin: 70px 165px;
 }
 
-#banner {
-  align-items: center;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-end;
-  color: white;
-  /* Take full size */
-  height: 100vh;
-  max-width: 100%;
-  /* Gradient */
-  background-image:
-    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.73)),
-    url('https://wallpapercave.com/wp/wp2016240.jpg');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; 
-  /* Background
-  background: url('https://wallpapercave.com/wp/wp2016240.jpg') center center / cover no-repeat;
-*/
-  padding-bottom: 50px;
-}
-
-#tribute-info {
-  width: 85%;
-  text-align: justify;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  font-size: calc(1.2rem);
-  align-content: center;
-}
-
 .career-quote {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   max-width: 80%;
   margin: 50px auto;
 }
 
-.bio-section {
-  padding: 130px 0 50px 0;
-  display: flex;
-  flex-flow: row wrap;
-  column-gap: 50px;
-  row-gap: 135px;
-}
-
-.bio {
-    max-width: 30%;
-    margin: 0 auto;
-  }
-
-.bio h2::first-letter {
-      z-index: 1;
-      float: left;
-      color: rgba(255, 0, 0, 0.2);
-      margin-right: -1000px;
-      margin-left: -80px;
-      margin-top: -120px;
-      font-size: calc(15rem + 2vw);
-      font-weight: 700;
-      text-shadow: 15px 15px rgba(0, 0, 255, 0.2);
-  }
-
 /* Stats Section Styling */
-
 .stats {
-  /* background: #EFC268; */
   display: grid;
   grid-template-columns: repeat(auto-fit, 350px);
   text-align: center;
@@ -153,27 +154,25 @@ h1 {
 }
 
 .stats p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
-#stat-quote {
-  background:#fff;
+.stats .stat-quote {
+  background-color: #fff;
   border: 2px solid #EFC268;
   padding: 25px 20px;
 }
 
-#stat-quote p{
+.stats .stat-quote p {
   line-height: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
-
-body > main:nth-child(1) > hr:nth-child(5) {
+body>main:nth-child(1)>hr:nth-child(5) {
   width: 85%;
- }
- 
- 
+}
 
 
 /* Discography Section Styling */
@@ -183,7 +182,6 @@ body > main:nth-child(1) > hr:nth-child(5) {
   align-items: center;
   padding-bottom: 50px;
   margin-top: 100px;
-  
 }
 
 #disco-info {
@@ -191,7 +189,6 @@ body > main:nth-child(1) > hr:nth-child(5) {
   align-self: center;
   row-gap: 40px;
 }
-
 
 #disco-info h2 {
   font-size: 4rem;
@@ -208,26 +205,26 @@ body > main:nth-child(1) > hr:nth-child(5) {
 #disco-info p {
   margin-left: 150px;
   line-height: 2em;
-letter-spacing: 2px;
+  letter-spacing: 2px;
 }
 
-button {
-  margin-right: auto;
-  margin-left: auto;
+#tribute-link {
+  text-align: center;
   display: block;
-  width: 225px;
-  height: 42px;
+  width: 100%;
+  height: 50%;
+  padding: 5px 0;
   border: none;
   border-radius: 20px;
   color: #fff;
   text-transform: uppercase;
   background-color: #EFC268;
-font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
-button:hover {
+#tribute-link:hover {
   background-color: #000;
-  color: #fcdfa6;
+  color: #EFC268;
 }
 
 
@@ -245,12 +242,11 @@ button:hover {
 .albums {
   flex-basis: 25%;
   padding-left: 8px;
-  padding-right: 8px;  
+  padding-right: 8px;
   display: flex;
   align-items: flex-end;
-justify-content: center;
-transition: 0.4s ease-out;
-
+  justify-content: center;
+  transition: 0.4s ease-out;
 }
 
 .albums:before {
@@ -278,14 +274,14 @@ transition: 0.4s ease-out;
   opacity: 1;
   transform: translateY(0px);
   text-align: center;
-display: flex;
-flex-flow: column;
-margin-right: auto;
-margin-left: auto;
-text-align: center;
-align-content: center;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-flow: column;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .albums img {
@@ -295,18 +291,12 @@ align-items: center;
   border: #EFC268 1px solid;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   padding: .1rem;
-  /* transition: 0.4s ease-out; */
   -o-object-fit: cover;
   object-fit: cover;
   position: relative;
   top: 0;
   left: 0;
-  transition: transform 10s;
-  }
-
-  .albums img:hover {
-    transform: rotate(360deg);
-  }
+}
 
 
 .albums .album-info {
@@ -314,29 +304,31 @@ align-items: center;
   bottom: 43px;
   z-index: 3;
   display: flex;
-flex-flow: column;
-justify-content: center;
-align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   opacity: 0;
   transform: translateY(30px);
   transition: 0.5s;
- width: 80%;
- margin-right: auto;
- margin-left: auto;
-text-align: center;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
+
 .albums .album-info h3 {
   margin: 0px;
   font-size: 2em;
   font-weight: 800;
 }
+
 .albums .album-info p {
   letter-spacing: 1px;
   font-size: 16px;
   margin-top: 8px;
   font-family: sans-serif;
-line-height: 1.15;
+  line-height: 1.15;
 }
 
 /* Bottom Blockquote */
