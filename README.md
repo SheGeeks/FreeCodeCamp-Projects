@@ -1,5 +1,5 @@
 # FreeCodeCamp Projects
- Projects completed for FreeCodeCamp's Responsive Web Design Course
+ Projects completed for FreeCodeCamp's Responsive Web Design Certification
  
  ## Completed Projects
  - [TLC Tribute Page](https://github.com/SheGeeks/FreeCodeCamp-Projects/blob/main/TributePage-README.md)
