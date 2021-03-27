@@ -15,73 +15,84 @@
 <body>
     <section class="survey-intro">
         <h1 id="title">Wellness Survey</h1>
-        <p id="description">How are you <i>really</i> doing?</p>
+        <p id="description">For daily wellness checkins with yourself.<br>How are you <i>really</i> doing? </p>
     </section>
 
     <!-- Form Section -->
- <section class="survey">
-    <h2 class="vr">Wellness Survey Form</h2>
-    <form id="survey-form" action="/">
+    <section class="survey">
+        <h2 class="vr">Wellness Survey Form</h2>
+        <form id="survey-form" action="/">
 
 
-        <label for="name" id="name-label">What's your name?</label>
-        <input type="text" id="name" name="name" placeholder="Name" autocomplete="on" autofocus
-            oninvalid="this.setCustomValidity('You forgot your name.')" oninput="this.setCustomValidity('')" required>
+            <label for="name" id="name-label"> 👋🏿 What's your name?</label>
+            <input type="text" id="name" name="name" placeholder="Name" autocomplete="on" autofocus
+                oninvalid="this.setCustomValidity('You forgot your name.')" oninput="this.setCustomValidity('')"
+                required>
 
-        <label for="email" id="email-label">Where can we reach you?</label>
-        <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="on"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            oninvalid="this.setCustomValidity('Looks like this is not an email')"
-            oninput="this.setCustomValidity('')" required>
+            <label for="email" id="email-label">📧 Where can we reach you?</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="on"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                oninvalid="this.setCustomValidity('Looks like this is not an email')"
+                oninput="this.setCustomValidity('')" required>
 
-        <label for="number" id="number-label">How old are you?</label>
-        <input type="number" id="number" name="number" placeholder="Age" min="10" max="90" autocomplete="on">
+            <label for="number" id="number-label">🤨 How old are you?</label>
+            <input type="number" id="number" name="number" placeholder="Age" min="10" max="90" autocomplete="on">
 
-        <hr>
+            <label for="dropdown" id="dropdown-label">🩺 How are you feeling?</label>
+            <select id="dropdown" name="dropdown">
+                <option value="happy">😀 Happy</option>
+                <option value="indifferent">😐 Indifferent</option>
+                <option value="anxious">😰 Anxious</option>
+                <option value="stressed">😩 Stressed</option>
+            </select>
 
-        <label for="dropdown" id="dropdown-label">How are you feeling?</label>
-        <select id="dropdown" name="dropdown">
-            <option value="happy">😀 Happy</option>
-            <option value="indifferent">😐 Indifferent</option>
-            <option value="anxious">😰 Anxious</option>
-            <option value="stressed">😩 Stressed</option>
-        </select>
-      
-        <label for="checklist" id="checklist-label">Daily Wellness Checklist</label>
-        <p class="note">Quick actions to improve wellness</p>
-        <fieldset>
-            <input type="checkbox" id="item1" name="item1" value="Hydrate">
-            <label for="affirmation1">Hydrate</label><br>
-            <input type="checkbox" id="item2" name="item2" value="Meditate">
-            <label for="affirmation2">Meditate</label><br>
-            <input type="checkbox" id="item3" name="item3" value="Laugh">
-            <label for="affirmation3">Laugh</label>
+            <label for="checklist" id="checklist-label">✔ Wellness Checklist</label>
+            <p class="note">Quick wins to improve wellness</p>
+            <fieldset>
+            <label class="container">Hydrate
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Meditate
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Laugh
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+        </fieldset>
+            
+            
+            <label for="radio" id="radio-label">🧠 Choose an Affirmation:</label>
+            <p class="note">Think positive for 60 secs</p>
+            <fieldset>
+            <label class="container">I trust I am on the right path
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">I give myself space to grow
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">I acknowledge my self-worth
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
         </fieldset>
 
-        <label for="affirmation" id="affirmation-label">Choose an Affirmation:</label>
-        <fieldset>
-            <input type="radio" id="affirmation1" name="affirmation" value="affirmation1">
-            <label for="affirmation1">I trust I am on the right path</label><br>
-            <input type="radio" id="affirmation2" name="affirmation" value="affirmation2">
-            <label for="affirmation2">I give myself space to grow</label><br>
-            <input type="radio" id="affirmation3" name="affirmation" value="affirmation3">
-            <label for="affirmation3"> I acknowledge my self-worth</label>
-        </fieldset>
+            <label for="message">💌 Note to Self</label>
+            <p class="note">Write a short note to yourself of love, kindness, and compassion</p>
+            <textarea name="message" id="message" rows="10" cols="15"></textarea>
+            <button type="submit" id="submit"
+                onclick="alert('This project is still a work in progress!')">Submit</button>
 
-        <hr>
-
-        <label for="message">Note to Self</label>
-        <p class="note">Write a short note to yourself of love, kindness, and compassion</p>
-        <textarea name="message" id="message" rows="10" cols="15"></textarea>
-
-        <button type="submit" id="submit" onclick="alert('This project is still a work in progress!')">Submit</button>
-
-        <div class="form-agreement">
-            <p>By clicking the button, you are agreeing to <a href="" target="_blank">be kind to yourself today</a>
-            </p>
-        </div>
-    </form>
-</section>
+            <div class="form-agreement">
+                <p>By clicking the button, you are agreeing to <a href="" target="_blank">be kind to yourself today</a>
+                </p>
+            </div>
+        </form>
+    </section>
 </body>
 
 </html>
