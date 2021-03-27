@@ -29,7 +29,7 @@ body {
 
 #description {
     margin-top: 0;
-    color: gray;
+    color: rgb(230, 230, 230);
 }
 
 
@@ -111,26 +111,28 @@ textarea {
 }
 
 form button[id=submit] {
-    background-color: hsl(154, 59%, 51%);
+    background-color: rgb(14, 187, 199);
     color: white;
     font-weight: 600;
     letter-spacing: .1em;
-    box-shadow: 0 5px 1px 0px hsl(154.1, 59.2%, 45%);
+    box-shadow: 0 5px 1px 0px rgb(10, 147, 156);
     border: 0px;
     font-size: 1rem;
     padding: 1rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 form button[id=submit]:hover {
-    background-color: #77e2b4;
+    background-color: rgb(109, 187, 192);
+    box-shadow: 0 5px 1px 0px rgb(84, 158, 163);
     color: white;
     font-weight: 600;
     letter-spacing: .1em;
-    box-shadow: 0 5px 1px 0px rgb(138, 212, 180);
     border: 0px;
     font-size: 1rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .form-agreement {
@@ -191,7 +193,8 @@ a {
         margin-top: 0;
     }
 
-    select, fieldset input {
+    select,
+    fieldset input {
         margin: 0 0 1rem 0;
     }
 

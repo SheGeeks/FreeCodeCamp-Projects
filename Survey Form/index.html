@@ -26,7 +26,7 @@
 
         <label for="name" id="name-label">What's your name?</label>
         <input type="text" id="name" name="name" placeholder="Name" autocomplete="on" autofocus
-            oninvalid="this.setCustomValidity('What\'s your name?')" oninput="this.setCustomValidity('')" required>
+            oninvalid="this.setCustomValidity('You forgot your name.')" oninput="this.setCustomValidity('')" required>
 
         <label for="email" id="email-label">Where can we reach you?</label>
         <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="on"
@@ -68,10 +68,9 @@
 
         <label for="message">Note To Self</label>
         <p class="note">Write a short note to yourself of love, kindness, and compassion.</p>
-        <textarea name="message" id="message" rows="10" cols="15" placeholder="Dear Self,"
-            aria-placeholder="Write a short note to yourself of love, kindness, and compassion."></textarea>
+        <textarea name="message" id="message" rows="10" cols="15"></textarea>
 
-        <button type="submit" id="submit" onclick="alert('Hello World!')">Click Me!</button>
+        <button type="submit" id="submit" onclick="alert('This project is still a work in progress!')">Submit</button>
 
         <div class="form-agreement">
             <p>By clicking the button, you are agreeing to <a href="" target="_blank">be kind to yourself today</a>
