@@ -34,7 +34,7 @@ body {
 
 
 /*Survey Form */
-.survey-form {
+.survey {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -176,7 +176,7 @@ a {
         line-height: 3rem;
     }
 
-    .survey-form {
+    .survey {
         margin: 0;
     }
 

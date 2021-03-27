@@ -19,9 +19,9 @@
     </section>
 
     <!-- Form Section -->
- <section class="survey-form">
+ <section class="survey">
     <h2 class="vr">Wellness Survey Form</h2>
-    <form id="wellness-survey" action="/">
+    <form id="survey-form" action="/">
 
 
         <label for="name" id="name-label">What's your name?</label>
@@ -32,14 +32,14 @@
         <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="on"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             oninvalid="this.setCustomValidity('Looks like this is not an email')"
-            oninput="this.setCustomValidity('')">
+            oninput="this.setCustomValidity('')" required>
 
         <label for="number" id="number-label">How old are you?</label>
         <input type="number" id="number" name="number" placeholder="Age" min="10" max="90" autocomplete="on">
 
 
         <label for="dropdown" id="dropdown-label">How are you feeling right now?</label>
-        <select id="dropown" name="dropdown">
+        <select id="dropdown" name="dropdown">
             <option value="happy">😀 Happy</option>
             <option value="indifferent">😐 Indifferent</option>
             <option value="anxious">😰 Anxious</option>
@@ -71,7 +71,7 @@
         <textarea name="message" id="message" rows="10" cols="15" placeholder="Dear Self,"
             aria-placeholder="Write a short note to yourself of love, kindness, and compassion."></textarea>
 
-        <button type="button" id="submit" onclick="alert('Hello World!')">Click Me!</button>
+        <button type="submit" id="submit" onclick="alert('Hello World!')">Click Me!</button>
 
         <div class="form-agreement">
             <p>By clicking the button, you are agreeing to <a href="" target="_blank">be kind to yourself today</a>
