@@ -32,3 +32,177 @@ body {
     color: gray;
 }
 
+
+/*Survey Form */
+.survey-form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+form {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: stretch;
+    row-gap: 2rem;
+    background: white;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 1px 0px #00000026;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+label {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+form p {
+    margin: 0;
+    font-weight: 700;
+}
+
+
+input {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 88%);
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: -30px;
+}
+
+select {
+    padding: .5rem;
+    margin-top: -30px;
+}
+
+fieldset {
+    border: none;
+    text-align: left;
+    margin-top: -30px;
+}
+
+fieldset label {
+    text-align: left;
+    display: inline;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.note {
+    font-weight: 400;
+    color: rgb(155, 155, 155);
+    margin-top: -30px;
+}
+
+textarea {
+    font-family: 'Poppins', sans-serif;
+    padding-left: .5rem;
+    margin-top: -20px;
+}
+
+form button[id=submit] {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-weight: 600;
+    letter-spacing: .1em;
+    box-shadow: 0 5px 1px 0px hsl(154.1, 59.2%, 45%);
+    border: 0px;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+form button[id=submit]:hover {
+    background-color: #77e2b4;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .1em;
+    box-shadow: 0 5px 1px 0px rgb(138, 212, 180);
+    border: 0px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.form-agreement {
+    font-size: .7rem;
+    font-weight: 500;
+    color: hsl(246, 25%, 77%);
+    padding: 0 1.5rem;
+    line-height: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+.form-agreement p {
+    margin: 0;
+    font-weight: 500;
+}
+
+a {
+    color: #ff7979;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/*Desktop Style*/
+
+@media only screen and (min-width: 797px) {
+    body {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background: #ff7979;
+        padding: 0;
+        margin: 2rem 0;
+    }
+
+    .survey-intro {
+        text-align: left;
+    }
+
+    #title {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .survey-form {
+        margin: 0;
+    }
+
+    form {
+        padding: 2rem;
+        text-align: left;
+        row-gap: 1rem;
+    }
+
+    input {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    select, fieldset input {
+        margin: 0 0 1rem 0;
+    }
+
+    fieldset {
+        border: 0;
+        margin-top: -10px;
+    }
+
+    .note {
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+}
