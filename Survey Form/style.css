@@ -56,18 +56,25 @@ form {
     text-align: center;
 }
 
-label {
-    color: black;
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-bottom: 0;
-}
-
 form p {
     margin: 0;
     font-weight: 700;
 }
 
+.note {
+    font-weight: 400;
+    color: rgb(155, 155, 155);
+    margin-top: -30px;
+}
+
+label {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    width: 100%;
+    display: block;
+}
 
 input {
     padding: 1rem;
@@ -77,6 +84,11 @@ input {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     margin-top: -30px;
+}
+
+hr {
+    border: 1px solid #eee;
+    width: 100%;
 }
 
 select {
@@ -96,12 +108,6 @@ fieldset label {
     line-height: 1.5;
     font-weight: 400;
     font-size: 1rem;
-}
-
-.note {
-    font-weight: 400;
-    color: rgb(155, 155, 155);
-    margin-top: -30px;
 }
 
 textarea {
