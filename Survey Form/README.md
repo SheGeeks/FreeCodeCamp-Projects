@@ -43,7 +43,7 @@ Build a CodePen.io app that is functionally similar to this: https://codepen.io/
 <img src="Corvida-Raven-surveyform-mobile.png" height="300"> <img src="Corvida-Raven-surveyform-desktop.png" width="530" >
 
 ### Links
-- [Codepen](https://codepen.io/corvida/details/vYgGVWb)
+- [CodePen](https://codepen.io/corvida/details/vYgGVWb)
 - [Live Demo](https://shegeeks.github.io/FreeCodeCamp-Projects/Survey%20Form/index.html)
 - [Source Files](https://github.com/SheGeeks/FreeCodeCamp-Projects/tree/main/Survey%20Form)
 
