@@ -23,7 +23,6 @@
         <h2 class="vr">Wellness Survey Form</h2>
         <form id="survey-form" action="/">
 
-
             <label for="name" id="name-label"> 👋🏿 What's your name?</label>
             <input type="text" id="name" name="name" placeholder="Name" autocomplete="on" 
                 oninvalid="this.setCustomValidity('You forgot your name.')" oninput="this.setCustomValidity('')"
@@ -46,7 +45,7 @@
                 <option value="stressed">😩 Stressed</option>
             </select>
 
-            <label for="checklist" id="checklist-label">✔ Wellness Checklist</label>
+            <label id="checklist-label">✔ Wellness Checklist</label>
             <p class="note">Quick wins to improve wellness</p>
             <fieldset>
             <label class="container">Hydrate
@@ -64,7 +63,7 @@
         </fieldset>
             
             
-            <label for="radio" id="radio-label">🧠 Choose an Affirmation:</label>
+            <label id="radio-label">🧠 Choose an Affirmation:</label>
             <p class="note">Think positive for 60 secs</p>
             <fieldset>
             <label class="container">I trust I am on the right path
@@ -88,7 +87,7 @@
                 onclick="alert('This project is still a work in progress!')">Submit</button>
 
             <div class="form-agreement">
-                <p>By clicking the button, you are agreeing to <a href="" target="_blank">be kind to yourself today</a>
+                <p>By clicking this button, you are agreeing to <span class="agreement">be kind to yourself today</span>
                 </p>
             </div>
         </form>
