@@ -48,11 +48,11 @@ Build a CodePen.io app that is functionally similar to this: https://codepen.io/
 - [Source Files](https://github.com/SheGeeks/FreeCodeCamp-Projects/tree/main/Survey%20Form)
 
 ## Process
-For this project, I created a responsive wellness survey form. This was built mobile-first using Semantic HTML5, CSS3, Flexbox and CSS Grid. I was able to reuse code from my Frontend Mentor sign-up form challenge solution to quickly get this survey off the ground. I was very happy with this because I'm trying to be mindful of creating code that can be reused quickly and easily when taking on these challenges.
+For this project, I created a responsive wellness survey form. This was built **mobile-first and uses semantic HTML5, CSS3, Flexbox and CSS Grid**. I reused code from my Frontend Mentor sign-up form challenge solution to quickly get this form off the ground. I was very happy about this because I'm trying to be mindful of creating code that can be reused quickly and easily when taking on these challenges.
 
 The biggest effort made with this challenge was customizing the radio and checkmark boxes. This was not a requirement, but I wanted them to fit the form aesthetically. W3Schools came to the rescue (resource link below). Great practice using CSS selectors to apply minor styling differences to the indicators for both boxes.
 
-Also, manually reviewed CSS in combination with Firefox Dev Tools to remove styles that were unnecessarily duplicating parent styles. While there are tools to do this, manually doing so helps me reinforce my understanding of how styles are applied in CSS and adjust accordingly to maintain clean code.
+Also, manually reviewed CSS in combination with Firefox Dev Tools to remove styles that were unnecessarily duplicating parent styles. While there are tools to do this, manually doing so helps reinforce my understanding of how styles are applied in CSS.
 
 ### Resources
 - [W3Schools: Custom Checkboxes](https://www.w3schools.com/howto/howto_css_custom_checkbox.asp)
