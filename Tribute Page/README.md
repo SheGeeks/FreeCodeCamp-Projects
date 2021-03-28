@@ -31,8 +31,8 @@ Build a CodePen.io app that is functionally similar to this: https://codepen.io/
 <img src="corvida-raven-tribute-page-middle.png" width="300"><img src="corvida-raven-tribute-page-bottom.png" width="300"> 
 
 ### Links
+- [CodePen](https://codepen.io/corvida/details/ZEBNZMY)
 - [Live Demo](https://shegeeks.github.io/FreeCodeCamp-Projects/Tribute%20Page/index.html)
-- [Codepen.io](https://codepen.io/corvida/details/ZEBNZMY)
 - [Source Files](https://github.com/SheGeeks/FreeCodeCamp-Projects/tree/main/Tribute%20Page)
 
 ## Process
