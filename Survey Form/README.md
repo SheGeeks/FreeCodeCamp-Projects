@@ -41,8 +41,7 @@ Build a CodePen.io app that is functionally similar to this: https://codepen.io/
 &nbsp; 
 
 ## Solution
-<img src="Corvida-Raven-surveyform-mobile.png" height="283">
-<img src="Corvida-Raven-surveyform-desktop.png" width="500" >
+<img src="Corvida-Raven-surveyform-mobile.png" height="283"> <img src="Corvida-Raven-surveyform-desktop.png" width="500" >
 
 ### Links
 - [Codepen](https://codepen.io/corvida/details/vYgGVWb)
@@ -57,10 +56,10 @@ The biggest effort made with this challenge was customizing the radio and checkm
 
 Also, manually reviewed CSS in combination with Firefox Dev Tools to remove styles that were unnecessarily duplicating parent styles. While there are tools to do this, manually doing so helps me reinforce my understanding of how styles are applied in CSS and adjust accordingly to maintain clean code.
 
-## Resources
+### Resources
 - [W3Schools: Custom Checkboxes](https://www.w3schools.com/howto/howto_css_custom_checkbox.asp)
 
-## Contact
+### Contact
 - Website: SheGeeks.net
 - Twitter: [@Corvida](https://www.twitter.com/corvida)
 
