@@ -26,7 +26,9 @@ Build a CodePen.io app that is functionally similar to this: https://codepen.io/
 </details>
 
 ## Solution
-<img src="corvida-raven-tribute-page-top.png" height="300"> <img src="corvida-raven-tribute-page-middle.png" width="300" > <img src="corvida-raven-tribute-page-bottom.png" width="300" > 
+<img src="corvida-raven-tribute-page-top.png" height="300">
+
+<img src="corvida-raven-tribute-page-middle.png" width="300"><img src="corvida-raven-tribute-page-bottom.png" width="300"> 
 
 ### Links
 - [Live Demo](https://shegeeks.github.io/FreeCodeCamp-Projects/Tribute%20Page/index.html)
