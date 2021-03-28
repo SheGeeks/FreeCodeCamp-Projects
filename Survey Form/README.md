@@ -39,7 +39,7 @@ Build a CodePen.io app that is functionally similar to this: https://codepen.io/
 16. Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
 </details> 
 
-## Solution
+## Solution 
 <img src="Corvida-Raven-surveyform-mobile.png" height="300"> <img src="Corvida-Raven-surveyform-desktop.png" width="530" >
 
 ### Links
@@ -48,7 +48,6 @@ Build a CodePen.io app that is functionally similar to this: https://codepen.io/
 - [Source Files](https://github.com/SheGeeks/FreeCodeCamp-Projects/tree/main/Survey%20Form)
 
 ## Process
-
 For this project, I created a responsive wellness survey form. This was built mobile-first using Semantic HTML5, CSS3, Flexbox and CSS Grid. I was able to reuse code from my Frontend Mentor sign-up form challenge solution to quickly get this survey off the ground. I was very happy with this because I'm trying to be mindful of creating code that can be reused quickly and easily when taking on these challenges.
 
 The biggest effort made with this challenge was customizing the radio and checkmark boxes. This was not a requirement, but I wanted them to fit the form aesthetically. W3Schools came to the rescue (resource link below). Great practice using CSS selectors to apply minor styling differences to the indicators for both boxes.
