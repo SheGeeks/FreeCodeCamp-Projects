@@ -1,9 +1,10 @@
-# Build a Tribute Page
+# FreeCodeCamp: Tribute Page
 
 ## Objective
 Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/zNqgVx.
 
-## User Stories/Requirements
+## User Stories
+<details><summary>Toggle to view all</summary>
 
 1. An element with a corresponding id="main", which contains all other elements.
 
@@ -22,11 +23,23 @@ Build a CodePen.io app that is functionally similar to this: https://codepen.io/
 8. The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
 
 9. The img element should be centered within its parent element.
+</details>
 
-## [Solution](https://shegeeks.github.io/FreeCodeCamp-Projects/Tribute%20Page/index.html)
-My tribute page pays homage to one of my favorite music bands and one of the bestselling groups of all-time: TLC. You'll find short bios on each member, media quotes, career stats and a chronological discography section of their albums (collective and solo releases).
+## Solution
+<img src="corvida-raven-tribute-page-top.png" height="300"> <img src="corvida-raven-tribute-page-middle.png" width="300" > <img src="corvida-raven-tribute-page-bottom.png" width="300" > 
 
-[View on Codepen.io](https://codepen.io/corvida/details/ZEBNZMY) | Made with 💝 by Corvida Raven using HTML & CSS
+### Links
+- [Live Demo](https://shegeeks.github.io/FreeCodeCamp-Projects/Tribute%20Page/index.html)
+- [Codepen.io](https://codepen.io/corvida/details/ZEBNZMY)
+- [Source Files](https://github.com/SheGeeks/FreeCodeCamp-Projects/tree/main/Tribute%20Page)
 
+## Process
+My tribute page pays homage to one of my favorite music bands and one of the bestselling groups of all-time: TLC. You'll find short bios on each member, media quotes, career stats and a chronological discography section of their albums (collective and solo releases). **HTML5, CSS3, CSS Grid.**
+
+### Contact
+- Website: SheGeeks.net
+- Twitter: [@Corvida](https://www.twitter.com/corvida)
+
+---
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
