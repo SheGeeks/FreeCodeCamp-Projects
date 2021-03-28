@@ -37,11 +37,10 @@ Build a CodePen.io app that is functionally similar to this: https://codepen.io/
 15. Inside the form element, I am presented with a textarea at the end for additional comments.
 
 16. Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
-</details>
-&nbsp; 
+</details> 
 
 ## Solution
-<img src="Corvida-Raven-surveyform-mobile.png" height="283"> <img src="Corvida-Raven-surveyform-desktop.png" width="500" >
+<img src="Corvida-Raven-surveyform-mobile.png" height="300"> <img src="Corvida-Raven-surveyform-desktop.png" width="530" >
 
 ### Links
 - [Codepen](https://codepen.io/corvida/details/vYgGVWb)
