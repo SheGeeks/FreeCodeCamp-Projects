@@ -15,8 +15,8 @@ body {
     background-position: center;
 }
 
-/* Visual Reader */
-.vr {
+/* Visually Hidden */
+.vh {
     display: none;
 }
 
