@@ -24,18 +24,18 @@
         <form id="survey-form" action="/">
 
             <label for="name" id="name-label"> 👋🏿 What's your name?</label>
-            <input type="text" id="name" name="name" placeholder="Name" autocomplete="on"
+            <input type="text" id="name" name="name" placeholder="Name" autocomplete="name"
                 oninvalid="this.setCustomValidity('You forgot your name.')" oninput="this.setCustomValidity('')"
                 required>
 
             <label for="email" id="email-label">📧 Where can we reach you?</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="on"
+            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 oninvalid="this.setCustomValidity('Looks like this is not an email')"
                 oninput="this.setCustomValidity('')" required>
 
             <label for="number" id="number-label">🤨 How old are you?</label>
-            <input type="number" id="number" name="number" placeholder="Age" min="10" max="90" autocomplete="on">
+            <input type="number" id="number" name="number" placeholder="Age" min="10" max="90">
 
             <label for="dropdown" id="dropdown-label">🩺 How are you feeling?</label>
             <select id="dropdown" name="dropdown">
