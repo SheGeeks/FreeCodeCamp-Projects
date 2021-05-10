@@ -38,18 +38,22 @@ Build a CodePen.io app that is functionally similar to this: https://codepen.io/
 </details> 
 
 ## Solution 
-(*Coming Soon*)
+![Desktop view](desktop-ss.png)
 
 ### Links
-- CodePen (*Coming Soon*)
-- Live Demo (*Coming Soon*)
+- [CodePen](https://codepen.io/corvida/pen/bGqdQGX)
+- [Live Demo]()
 - [Source Files](https://github.com/SheGeeks/FreeCodeCamp-Projects/tree/main/product-landing-page)
 
-## Process
-*WIP*
+## Process (*HTML5, CSS3, & Flexbox*)
+For this project, I made a responsive landing page for one of my favorite productivity apps: [Notion](https://notion.so). Notion is a powerhouse tool that does a lot. Where it shines is in note-taking, planning and organizing just about anything. Notion is available for desktop and mobile with free and pro plans.
 
 ### Resources
+- [Notion](https://notion.so)
 
+- Background Assets:
+    - https://bgjar.com/
+    - https://www.svgbackgrounds.com/
 
 ### Contact
 - Website: SheGeeks.net

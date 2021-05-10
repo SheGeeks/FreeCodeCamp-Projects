@@ -5,38 +5,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Product Landing Page</title>
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    <link rel="preload" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript> <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css"></noscript>
+    <title>Notion: Get Organized</title>
 </head>
 
 <body>
 
     <header id="header">
-        <img src="" alt="logo" id="header-img">
         <nav id="nav-bar">
-            <a href="#Home" class="nav-link">Home</a>
-            <a href="#Features" class="nav-link">Features</a>
-            <a href="#Experience" class="nav-link">Experience</a>
-            <a href="#Preorder" class="nav-link">Preorder</a>
+       <img src="notion-logo.png" id="header-img" alt="Notion Logo"> 
+            <div class="nav-links">
+                <a href="#product-intro" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#signup" class="nav-link">Get started!</a>
+            </div>
         </nav>
     </header>
 
     <main>
-        <!--Product Video-->
-        <embed src="" type="video">
-        <!--Product Video-->
-        <video src="" id="video"></video>
+        <div id="product-intro">
+            <div class="sec-desc">
+                <img class="featured-img" src="" alt="">
+                <h1 class="title-heading">Notion</h1>
+                <p class="subheading">Write, plan, & get organized.</p>
+            </div>
+            <!--Product Video-->
+            <div id="videowrapper">
+                <iframe width="560" height="315" id="video" src="https://www.youtube-nocookie.com/embed/oTahLEX3NXo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+        </div>
+
+        <!--Product Features-->
+        <section id="features">
+            <div class="sec-desc">
+                <h2 class="title-heading">Why Notion?</h2>
+                <p></p>
+            </div>
+            <div class="feature-item">
+                <h3 class="item-title">Get started</h3>
+                <p>Capture notes quickly and organize them however you want, no matter where you are. Notion remembers
+                    it all so you don’t have to. Whether it’s to-do’s, a reminder, or your next big idea, Notion makes
+                    it easy to add and find later.</p>
+            </div>
+            <div class="feature-item">
+                <h3 class="item-title">Get organized</h3>
+                <p>Your budget, recipes, articles to read — instead of using multiple apps to corral this info, keep it
+                    all in one place. In Notion, you can create a home base for the many things going on in your life,
+                    and build it to match the way your brain works.</p>
+            </div>
+            <div class="feature-item">
+                <h3 class="item-title">Get better</h3>
+                <p>No matter how you want to improve, Notion is flexible enough to help you achieve your goals. Meal
+                    planners, reading lists, and habit trackers all live side-by-side — no more switching between apps
+                    to stay on target.</p>
+            </div>
+        </section>
     </main>
 
-    <section>
+    <footer>
+        <section id="signup">
+        <h2 class="title-heading">Get Notion</h2>
         <form action="https://www.freecodecamp.com/email-submit" id="form">
-            <label for="email">Email</label>
-            <input type="email" name="" id="email" placeholder="your@email.com" autocomplete="email"
+            <input type="email" name="email" id="email" placeholder="your@email.com" aria-label="email" autocomplete="email"
                 pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$" required>
-            <input type="submit" id="submit" value="Submit">
+            <input type="submit" id="submit" value="submit">
         </form>
-    </section>
-
+        </section>
+        <div class="attribution"><small>Made with 💝 by <a href="https://shegeeks.net">Corvida</a> | Product, video, &
+                logo belong to <a href="https://notion.so">Notion</a></small></div>
+    </footer>
 </body>
 
 </html>
