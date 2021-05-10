@@ -50,7 +50,6 @@ For this project, I made a responsive landing page for one of my favorite produc
 
 ### Resources
 - [Notion](https://notion.so)
-
 - Background Assets:
     - https://bgjar.com/
     - https://www.svgbackgrounds.com/
