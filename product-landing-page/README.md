@@ -42,7 +42,7 @@ Build a CodePen.io app that is functionally similar to this: https://codepen.io/
 
 ### Links
 - [CodePen](https://codepen.io/corvida/pen/bGqdQGX)
-- [Live Demo]()
+- [Live Demo](https://shegeeks.github.io/FreeCodeCamp-Projects/product-landing-page/)
 - [Source Files](https://github.com/SheGeeks/FreeCodeCamp-Projects/tree/main/product-landing-page)
 
 ## Process (*HTML5, CSS3, & Flexbox*)
