@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Border-Box Sizing Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main-header">
+        <nav id="navbar">
+            <header>
+                <img width="90" alt="CSS.3" id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/256px-CSS.3.svg.png">
+                <h1>CSS Box Model</h1>
+            </header>
+            <ul>
+                <li class="active"><a href="#Box_Model" class="nav-link">Box Model</a></li>
+                <li><a href="#Padding" class="nav-link">Padding</a></li>
+                <li><a href="#Borders" class="nav-link">Borders</a></li>
+                <li><a href="#Margins" class="nav-link">Margins</a></li>
+                <li><a href="#Margin_Collapse" class="nav-link">Margin Collapse</a></li>
+                <li><a href="#References" class="nav-link">References</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main id="main-doc">
+
+        <section class="main-section" id="Box_Model">
+            <header>
+                <h2>Box Model</h2>
+            </header>
+            <p>In CSS, the box model is a way to visualize the spacing that wraps around every HTML element, aka any
+                content. This spacing consists of:</p>
+            <ul>
+                <li>margins</li>
+                <li>borders</li>
+                <li>padding</li>
+            </ul>
+            <p>Let's dig into each of these properties to see how they work.</p>
+        </section>
+
+        <section class="main-section" id="Padding">
+            <header>
+                <h2>Padding</h2>
+            </header>
+            <div class="code-block">
+                <pre>
+                    <span class="code-line">padding-top: 1rem;</span>
+                    <span class="code-line">padding-right: 1rem;</span>
+                    <span class="code-line">padding-bottom: 1rem;</span>
+                    <span class="code-line">padding-left: 1rem;</span>
+                </pre>
+            </div>
+            <h3><code>padding</code></h3>
+            <p>Padding refers to the immediate space inside of an element's borders. You can define the padding for
+                each side of an element by length, percentage or through inheritance.
+            </p>
+
+            <p>Since the values are the same for all sides, this code can be refactored as: <code>padding:
+                    1rem;</code></p>
+
+            <p>You can also set the value for opposite sides of an element (top/bottom, left/right) likeso:
+                <code>padding: 1rem 1rem;</code></p>
+
+            <p>Each of these code snippets are valid ways to manipulate padding values. In this example, they all have
+                the same value: 1rem of spacing around an element. The first option gives you more control, while the
+                others can result in cleaner code.</p>
+        </section>
+
+        <section class="main-section" id="Borders">
+            <header>
+                <h2>Borders</h2>
+            </header>
+
+                <div class="code-block">
+                    <pre>
+                        <span class="code-line">p {</span>
+                        <span class="code-line"> border: 5px solid red;</span>
+                        <span class="code-line">}</span>
+                    </pre>
+                </div>
+                <h3><code>border</code></h3>
+                <p> Borders wrap around an element and include in padding the element has set. Borders can be defined with a style, width, and color. Values for all three properties can be set in one line of code using the <code>border</code> shorthand property. Alternatively, each property can be explicity defined.</p>
+        
+                <h3><code>border-width</code></h3>
+                <p>The <code>border-width</code> property defines how thick the border looks around an element. It can
+                    be defined in px, pt, cm, em and more. In addition, there are three pre-defined values to choose from:
+                    thin, medium, and thick. Just like <code>padding</code>, the <code>border-width</code> can be adjusted
+                    for all sides.</p>
+          
+                <div class="code-block">
+                    <pre>
+                        <span class="code-line">p {</span>
+                        <span class="code-line"> border-top-style: dotted;</span>
+                        <span class="code-line"> border-right-style: solid;</span>
+                        <span class="code-line"> border-bottom-style: dotted;</span>
+                        <span class="code-line"> border-left-style: solid;</span>
+                        <span class="code-line">}</span>
+                    </pre>
+                </div>
+                <h3><code>border-style</code></h3>
+                <p>Just like padding, borders apply to all four sides of an element with the same or different values
+                    applied to each side.</p>
+                <p>
+                    One value can be used to apply to all sides. <code>border-style: dotted;</code> and different values can set for each side. This code applies different values to all four sides: <code>border-style: dotted solid double dashed;</code>.
+                </p>
+                <p>
+                    Multiple values are applied starting from the top, then to the right, bottom, and left. When using only
+                    three values the second value is applied to the right and left border. If there are only two values,
+                    the first value is applied to the top and bottom borders. This logic also applies to the border
+                    width and border-color.
+                </p>
+           
+                <h3><code>border-color</code></h3>
+                <p>The border color is self-explanatory and can be set using the property <code>border-color</code>. Color values can be set in RGB, HSL, and HEX.</p>
+            
+                <h3><code>border-radius</code></h3>
+                <p>If you look at the corners of the white container holding this text, you'll notice they're rounded rather than straight. Creating rounded corners on any element can be done using the <code>border-radius</code> property. One cool thing about this property is that it can be set on any element without a border. This is great for rounding the corner of image or a content container like this one.</p>
+         
+
+        </section>
+
+        <section class="main-section" id="Margins">
+            <header>
+                <h2>Margins</h2>
+            </header>
+            <div class="code-block">
+                <pre>
+                    <span class="code-line">p {</span>
+                    <span class="code-line"> margin-top: 3rem;</span>
+                    <span class="code-line"> margin-right: 3rem;</span>
+                    <span class="code-line"> margin-bottom: 3rem;</span>
+                    <span class="code-line"> margin-left: rem;</span>
+                    <span class="code-line">}</span>
+                </pre>
+            </div>
+            <h3><code>margin</code></h3>
+            <p>Margins are used to create space around elements and outside of their borders. Similar to padding and borders, the same value can be set with <code>margin: 1rem;</code> or different values can be set with<code>margin: 1rem 2rem 3rem 4rem</code>.</p>
+        </section>
+
+        <section class="main-section" id="Margin_Collapse">
+            <header>
+                <h2>Margin Collapse</h2>
+            </header>
+            <p> Occassionaly, top and bottom margin elements can collapse into a single margin. Whichever margin has a bigger value will become the defacto margin value. Fortunately, only vertical margins collapse (top/bottom). That's because collapsing margins are supposed to make it easy to set vertical margins for <em>sets of content</em>, which you can learn more about <a href="https://medium.com/@joseph0crick/margin-collapse-in-css-what-why-and-how-328c10e37ca0" target="_blank">in this article</a>. </p>
+        </section>
+        <section id="References" class="main-section">
+            <header>
+                <h2>References</h2>
+            </header>
+            <ul>
+                <li><a title="Nikotaf, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:CSS.3.svg">CSS3 Image</a></li>
+                <li><a href="https://colorpalettes.net/color-palette-4298/">Color Palette</a></li>
+                <li><a href="https://codepen.io/elomatreb/pen/hbgxp">Code Block Inspiration</a></li>
+                <li><a href="https://www.w3schools.com/css/css_boxmodel.asp">W3Schools CSS Box Model</a></li>
+                <li> <a href="https://medium.com/@joseph0crick/margin-collapse-in-css-what-why-and-how-328c10e37ca0">Margin Collapse in CSS: What, Why and How</a></li>
+            </ul>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
