@@ -1,7 +1,5 @@
 # FreeCodeCamp Projects
- Projects completed for FreeCodeCamp's Responsive Web Design Certification
-
- Dive into each project's folder to see project overviews, solutions and additional info.
+ Projects completed for FreeCodeCamp's Responsive Web Design Certification. Dive into each project's folder to see project overviews, solutions and live demos.
  
  ## Completed
 - [Box Model Technical Documentation](https://github.com/SheGeeks/FreeCodeCamp-Projects/tree/main/tech-doc) | (5.22.21)
