@@ -42,8 +42,8 @@ Build a CodePen.io app that is functionally similar to this: https://codepen.io/
 
 ### Links
 - [CodePen](https://codepen.io/corvida/pen/abJJKJp)
-- [Live Demo](https://shegeeks.github.io/FreeCodeCamp-Projects/technical-documentation/index.html)
-- [Source Files](https://github.com/SheGeeks/FreeCodeCamp-Projects/tree/main/technical-documentation)
+- [Live Demo](https://shegeeks.github.io/FreeCodeCamp-Projects/tech-doc/index.html)
+- [Source Files](https://github.com/SheGeeks/FreeCodeCamp-Projects/tree/main/tech-doc)
 
 ## Process
 This technical document was built **mobile-first and uses semantic HTML5, CSS3, Flexbox**. This was a fun and relatively easy project to mockup. Writing the content took longer than the actual coding process. 
