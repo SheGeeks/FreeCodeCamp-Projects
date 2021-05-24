@@ -4,15 +4,15 @@
 }
 
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
-    background-color: #f3ece2;
+    background-color: #dbd1c2;
 }
 
 a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #778899;
+    color: #666c73;
 }
 
 header {
@@ -23,6 +23,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    max-width: 1276px;
     background-color: #f3ece2;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23a3b8cb'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
 }
@@ -60,14 +61,11 @@ main {
     width: 100%;
     max-width: 1280px;
     margin: auto;
+    background-color: #f3ece2;
 }
 
 section {
     padding: 0 2rem 1rem;
-}
-
-section:not(#welcome-section) {
-    margin-bottom: 3rem;
 }
 
 .section-title {
@@ -77,6 +75,10 @@ section:not(#welcome-section) {
     color: #5f79a0;
     width: 100%;
     margin-bottom: 0;
+}
+
+section p {
+    color: #536d93;
 }
 
 #welcome-section {
@@ -123,17 +125,17 @@ section:not(#welcome-section) {
     margin: auto;
     margin-top: 2rem;
     font-weight: 700;
+   
 }
+#skill-bars p {
+    color: #466593;
 
+}
 .skills {
     text-align: right;
-    /* Right-align text */
     padding-top: .5rem;
-    /* Add top padding */
     padding-bottom: .5rem;
-    /* Add bottom padding */
     color: white;
-    /* White text color */
     padding-right: 1rem;
     border-radius: 25px;
     font-weight: 500;
@@ -145,36 +147,25 @@ section:not(#welcome-section) {
     background-color: #04AA6D;
 }
 
-/* Green */
 .css {
     width: 89%;
     background-color: #f39f21;
 }
 
-/* Blue */
 .js {
     width: 65%;
     background-color: #d3b460;
 }
 
-/* Red */
-.react {
+.react, .sql {
     width: 35%;
     background-color: #808080;
 }
 
-/* Dark Grey */
-.sql {
-    width: 30%;
-    background-color: #808080;
-}
-
-/* Dark Grey */
-
 #work {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -193,8 +184,6 @@ section:not(#welcome-section) {
     width: 100%;
     max-width: 950px;
     height: auto;
-    padding: .2rem;
-    background-color: #dadadad9;
     margin: auto;
 }
 
@@ -205,7 +194,7 @@ section:not(#welcome-section) {
 }
 
 .works a {
-    color: #778899;
+    
     letter-spacing: .1ch;
     font-weight: 600;
 }
@@ -225,27 +214,32 @@ section:not(#welcome-section) {
 }
 
 footer {
+    width: 100%;
+    max-width: 1280px;
     padding: 1rem;
     color: #5f79a0;
     text-align: center;
+    background-color: #f3ece2;
 }
 
 footer a {
     text-transform: none;
-    color: #778899;
     font-weight: 600;
 }
 
 @media only screen and (min-width: 750px) {
 
-    section {
-        padding: 0 3rem 1rem;
+    body {
+        width: 100%;
+        max-width: 1280px;
     }
 
-    .works {
-        margin: 1rem .5rem;
-        width: 47%;
-        max-width: 475px;
+    header {
+        padding: 0 3rem;
+    }
+
+    section {
+        padding: 0 3rem 3rem;
     }
     
     #about {
@@ -263,6 +257,20 @@ footer a {
         padding: 1rem 2rem 2rem;
         width: 46%;
         margin-left: 1.5rem;
+    }
+
+    .works {
+        margin: 1rem .5rem;
+        width: 47%;
+        max-width: 545px;
+        background-color: #e9e1d1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1.3rem;
+        height: 27rem;
     }
 
 }
