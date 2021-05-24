@@ -30,18 +30,25 @@ Build a CodePen.io app that is functionally similar to this: https://codepen.io/
 </details> 
 
 ## Solution 
-*Work In Progress*
+![Desktop view](ss.png)
 
 ### Links
-- [CodePen](#)
-- [Demo](https://shegeeks.github.io/FreeCodeCamp-Projects/portfolio/index.html)
+- [CodePen](https://codepen.io/corvida/pen/rNymMMQ)
+- [Site Demo](https://shegeeks.github.io/FreeCodeCamp-Projects/portfolio/index.html)
 - [Source Code](https://github.com/SheGeeks/FreeCodeCamp-Projects/tree/main/portfolio)
 
 ## Process
-This personal portfolio project was built **mobile-first and uses semantic HTML5, CSS3, Flexbox**. 
+This personal portfolio project was built **mobile-first, is A11Y friendly, and uses semantic HTML5, CSS3, Flexbox.**. 
+
+I created a simple design that centers around the porfolio projects: the projects I've completed for [FreeCodeCamp's  Responsive Design course](https://freecodecamp.org). Each project include a brief description and links to a live demo akong with the source code. I had the most fun playing with the link and text colors to create a color scheme that was both accessible and pleasing to look at. 
+
+This is my final project for the course. I'm planning to continue practicing with additional courses in the future. Stay tuned!
 
 ### Resources
-- 
+- [Dummy Text](https://www.blindtextgenerator.com/lorem-ipsum)
+- [FontAwesome Icons](https://fontawesome.com/)
+- [SVG Background Generator](https://www.svgbackgrounds.com/#rainbow-vortex)
+- [Skill Bar Tutorial](https://www.w3schools.com/howto/howto_css_skill_bar.asp)
 
 ### Contact
 - Website: SheGeeks.net
