@@ -251,6 +251,10 @@ footer a {
         padding: 0 3rem 3rem;
     }
 
+    #welcome-section {
+        padding-right: 4rem;
+    }
+
     #about-section {
         display: flex;
         flex-wrap: wrap;
